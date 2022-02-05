@@ -16,6 +16,7 @@ import { MatCard, MatCardModule } from '@angular/material/card';
 import { MatInputModule } from '@angular/material/input';
 // import { MatFormFieldModule } from '@angular/material';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { IonicModule } from '@ionic/angular';
 
 
 
@@ -35,13 +36,13 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-
     AngularFireModule.initializeApp(environment.firebase),
     MatButtonModule,
     MatCardModule,
     MatInputModule,
     FormsModule,
     ReactiveFormsModule,
+    IonicModule.forRoot(),
   ],
   schemas: [ CUSTOM_ELEMENTS_SCHEMA],
   providers: [],
