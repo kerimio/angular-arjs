@@ -9,6 +9,18 @@ import { SignupComponent } from './signup/signup.component';
 import { LoginComponent } from './login/login.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 
+import { environment } from '../environments/environment';
+import { AngularFireModule } from '@angular/fire/compat';
+import { MatButtonModule } from '@angular/material/button';
+import { MatCard, MatCardModule } from '@angular/material/card';
+import { MatInputModule } from '@angular/material/input';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+
+
+
+
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -20,7 +32,15 @@ import { DashboardComponent } from './dashboard/dashboard.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+
+    AngularFireModule.initializeApp(environment.firebase),
+    MatButtonModule,
+    MatCardModule,
+    MatInputModule,
+    FormsModule,
+    ReactiveFormsModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent]

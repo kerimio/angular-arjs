@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-
+import firebase from 'firebase/compat/app';
+import { AngularFireAuth } from '@angular/fire/compat/auth'
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
@@ -7,9 +8,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-  constructor() { }
+  constructor(public afAuth: AngularFireAuth) { }
 
   ngOnInit(): void {
   }
-
+  logout(): void{
+    this.afAuth.signOut();
+  }
 }
