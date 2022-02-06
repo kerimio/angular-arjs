@@ -4,7 +4,7 @@
 	"webDir": "dist/angularAR",
 	"bundledWebRuntime": false,
 	"server": {
-		"url": "https://192.168.178.76:4200",
+		"url": "http://test.168.178.76:4200",
 		"cleartext": true
 	}
 }

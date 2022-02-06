@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
+    "start": "ng serve --ssl -o --host 0.0.0.0",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
@@ -22,6 +22,7 @@
     "@angular/platform-browser-dynamic": "~12.2.0",
     "@angular/router": "~12.2.0",
     "@capacitor/android": "^3.4.0",
+    "@capacitor/camera": "^1.2.4",
     "@capacitor/core": "^3.4.0",
     "@capacitor/ios": "^3.4.0",
     "firebase": "^9.4.0",

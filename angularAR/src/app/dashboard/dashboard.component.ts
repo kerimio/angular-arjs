@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Camera, CameraResultType } from '@capacitor/camera';
+
 
 @Component({
   selector: 'app-dashboard',
@@ -7,9 +9,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DashboardComponent implements OnInit {
 
-  constructor() { }
-
   ngOnInit(): void {
+
+
   }
 
 }

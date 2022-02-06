@@ -1,1 +1,22 @@
-<p>dashboard works!</p>
+
+<body>
+  <button  class="test" mat-raised-button color="primary" routerLink="/login">
+    Login
+  </button>
+  <div class="myclass">
+  <a-scene
+      embedded
+      loading-screen="enabled: false;"
+      arjs="sourceType: webcam; debugUIEnabled: false;"
+  >
+          <a-image
+              src="./../../assets/asset.png"
+              look-at="[gps-camera]"
+              scale="1 1 1"
+              gps-entity-place="latitude: 52.37655; longitude: 9.741046;"
+          ></a-image>
+
+      <a-camera gps-camera rotation-reader></a-camera>
+  </a-scene>
+</div>
+</body>
