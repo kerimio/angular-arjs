@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { AngularFireAuth } from '@angular/fire/compat/auth'
+import { Router } from '@angular/router';
+
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
@@ -7,7 +9,12 @@ import { AngularFireAuth } from '@angular/fire/compat/auth'
 })
 export class HomeComponent implements OnInit {
 
-  constructor(public afAuth: AngularFireAuth) { }
+  constructor(public afAuth: AngularFireAuth, router: Router) {
+    if (!afAuth.user) {
+      alert("hi");
+      router.navigate(['login']);
+    }
+   }
 
   ngOnInit(): void {
   }
