@@ -16,7 +16,6 @@ import { MatCard, MatCardModule } from '@angular/material/card';
 import { MatInputModule } from '@angular/material/input';
 // import { MatFormFieldModule } from '@angular/material';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { IonicModule } from '@ionic/angular';
 
 
 
@@ -42,7 +41,6 @@ import { IonicModule } from '@ionic/angular';
     MatInputModule,
     FormsModule,
     ReactiveFormsModule,
-    IonicModule.forRoot(),
   ],
   schemas: [ CUSTOM_ELEMENTS_SCHEMA],
   providers: [],
